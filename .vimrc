@@ -40,11 +40,14 @@ else
   let &listchars = 'tab:> ,extends:>,precedes:<,nbsp:.'
 endif
 
+
 if exists('+colorcolumn')
   set colorcolumn=80
 else
   au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 endif
+
+colorscheme gruvbox
 
 " The fish shell is not very compatible to other shells and unexpectedly
 " breaks things that use 'shell'.
@@ -105,20 +108,16 @@ set secure
 
 " Bind command and shortcut
 
-command Stdheader call Baner#stdheader()
-map <F1> :Stdheader<CR>
-autocmd BufWritePre * Baner#update()
-
+command Stdheader42 call Baner#stdheader_c()
+map <F1> :Stdheader42<CR>
 
 :autocmd BufNewFile, ej.c 0r ~/.vim/templates/skeleton.c
 
-:autocmd BufNewFile *.c call Baner#stdheader()
+:autocmd BufNewFile *.c call Baner#stdheader_c()
 
 :autocmd BufNewFile *.h call Baner#stdheader_h()
-
 
 nnoremap <F2> :bp<cr>
 nnoremap <F3> :bn<cr>
 
 nnoremap <F9> :wall!<cr>:make!<cr><cr>
-
