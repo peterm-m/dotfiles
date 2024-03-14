@@ -46,7 +46,7 @@ if exists('+colorcolumn')
 else
   au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>80v.\+', -1)
 endif
-
+set background=dark
 colorscheme gruvbox
 
 " The fish shell is not very compatible to other shells and unexpectedly
@@ -72,6 +72,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'ctrlpvim/ctrlp.vim'
     Plug 'tpope/vim-fugitive'
     Plug 'dense-analysis/ale'
+    Plug 'rhysd/vim-clang-format'
 call plug#end()
 
 let mapleader=" "
