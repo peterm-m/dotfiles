@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/goinfre/pedromar/intra-uuid-72246838-cef4-46d2-89c1-7094d9aaec04-5735115-pedromar/ex02'
+let g:netrw_dirhist_2='/home/pedromar'
+let g:netrw_dirhist_1='/home/pedromar/code/cpp'
+let g:netrw_dirhist_0='/home/pedromar/code/cpp/CPP03/ex00'
+let g:netrw_dirhist_9='/home/pedromar/code/cpp/CPP03'
+let g:netrw_dirhist_8='/home/pedromar/code/cpp/CPP03/ex00'
+let g:netrw_dirhist_7='/home/pedromar/code/cpp/CPP03'
+let g:netrw_dirhist_6='/home/pedromar/code/cpp/CPP03/ex00'
+let g:netrw_dirhist_5='/home/pedromar/code/cpp/CPP03'
+let g:netrw_dirhist_4='/home/pedromar/code/cpp/CPP03/ex00'
