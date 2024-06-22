@@ -11,11 +11,14 @@ fi
 
 # Aliases
 alias :q="exit"
-
+alias :e="vim"
 alias mv='mv -i'
 alias cp='cp -i'
 alias ln='ln -i'
 alias rm='rm -I --preserve-root'
+
+alias m="less"
+alias cl="clear"
 
 alias paux='ps aux | grep'
 
@@ -24,8 +27,6 @@ alias ll="ls ${lsflags} -l"
 alias la="ls ${lsflags} -la"
 
 alias ,="cd .."
-alias m="less"
-alias cl="clear"
 alias find="find . -name $*"
 
 alias storage="echo -n 'free space in pedromar: '; df -h $HOME | grep $HOME | awk '{print(\$4)}' | tr 'i' 'B'"

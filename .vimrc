@@ -107,7 +107,6 @@ call plug#end()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "  LSP
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:lsp_settings_servers_dir = "/home/pedromar/sgoinfre"
 let g:lsp_diagnostics_enabled = 1
 let g:lsp_diagnostics_echo_cursor = 1
 let g:lsp_diagnostics_float_cursor = 1
@@ -169,9 +168,6 @@ let g:ale_fixers = {
 			\ 'c': ['clang-format'],
 			\ 'sh': ['shfmt'],
 			\}
-
-let g:ale_cpp_clangformat_executable = '/home/pedromar/.vscode/extensions/ms-vscode.cpptools-1.20.5-linux-x64/LLVM/bin/clang-format'
-let g:ale_c_clangformat_executable = '/home/pedromar/.vscode/extensions/ms-vscode.cpptools-1.20.5-linux-x64/LLVM/bin/clang-format'
 
 let g:ale_linters_explicit = 0 " only run linter you specified
 let g:ale_completion_delay = 500
